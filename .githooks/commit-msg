@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Commit-msg hook: Verify SEED binding exists before allowing commit
+
+set -e
+
+SEED_FILE="PROOF/SEED.txt"
+
+if [ ! -f "$SEED_FILE" ]; then
+  echo "[commit-msg] ERROR: $SEED_FILE not found!"
+  echo "Σ binding must exist before committing."
+  exit 1
+fi
+
+# Verify SEED file contains valid canonical seed format
+if ! grep -q "AXIOMHIVE::Σ=ALEXIS-M-ADAMS::" "$SEED_FILE"; then
+  echo "[commit-msg] ERROR: Invalid seed format in $SEED_FILE"
+  echo "Must contain canonical Σ binding: AXIOMHIVE::Σ=ALEXIS-M-ADAMS::<REPO>::HEAD=<SHA>::EPOCH=<UNIX>"
+  exit 1
+fi
+
+echo "[commit-msg] Σ binding verified."
+exit 0
