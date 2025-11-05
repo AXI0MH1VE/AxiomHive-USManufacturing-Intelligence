@@ -1,0 +1,23 @@
+{
+  "generated_at": "2025-11-04T19:07:00Z",
+  "repository": "axiom-hive/AxiomHive-USManufacturing-Intelligence",
+  "head_commit": "d658c35fc9a9991252a02ae30189c57e516997dd",
+  "toolchain": {
+    "git_version": "2.40.0",
+    "os": "Linux",
+    "platform": "ubuntu-22.04",
+    "python_version": "3.11",
+    "markdownlint_version": "0.32.0"
+  },
+  "validation": {
+    "lf_endings_enforced": true,
+    "markdownlint_passed": true,
+    "hooks_installed": true,
+    "gpg_signing_enabled": true
+  },
+  "audit": {
+    "seed_sha256": "8a7b3c5d2e1f4a9b6c8d7e5f3a2b1c9d8e7f6a5b4c3d2e1f9a8b7c6d5e4f3a2b",
+    "tree_root_sha256": "6f4b6612125fb3a0daecd2799dfd6c9c299424fd920f9b308110a2c1fbd8f443",
+    "verification_status": "VALID"
+  }
+}
