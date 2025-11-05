@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this dataset or analytics from this repository, please cite it as below."
+author:
+- family-names: "Adams"
+  given-names: "Alexis M."
+title: "AxiomHive US Manufacturing Intelligence"
+version: 1.0.0
+date-released: 2025-11-04
+url: "https://github.com/axiom-hive/AxiomHive-USManufacturing-Intelligence"
+repository-code: "https://github.com/axiom-hive/AxiomHive-USManufacturing-Intelligence"
+type: dataset
+abstract: "US manufacturing intelligence and analytics platform providing data-driven insights for manufacturing sector analysis and decision-making."
+keywords:
+  - manufacturing
+  - analytics
+  - US economy
+  - data intelligence
+  - industrial sector
+license: MIT
