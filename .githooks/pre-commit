@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Pre-commit hook: Convert staged files to LF endings
+
+set -e
+
+echo "[pre-commit] Enforcing LF line endings..."
+
+# Get list of staged text files
+STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.(py|md|txt|yml|yaml|json|sh|conf)$' || true)
+
+if [ -n "$STAGED_FILES" ]; then
+  for FILE in $STAGED_FILES; do
+    if [ -f "$FILE" ]; then
+      # Convert CRLF to LF
+      dos2unix -q "$FILE" 2>/dev/null || sed -i 's/\r$//' "$FILE"
+      # Re-stage the file
+      git add "$FILE"
+      echo "  ✓ $FILE (LF enforced)"
+    fi
+  done
+fi
+
+echo "[pre-commit] LF enforcement complete."
+exit 0
