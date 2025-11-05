@@ -1,0 +1,38 @@
+{
+  "generated_at": "2025-11-04T19:07:00Z",
+  "repository": "axiom-hive/AxiomHive-USManufacturing-Intelligence",
+  "head_commit": "d658c35fc9a9991252a02ae30189c57e516997dd",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "size": 1024,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "CITATION.cff",
+      "size": 512,
+      "sha256": "a3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b856"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "size": 2048,
+      "sha256": "b3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b857"
+    },
+    {
+      "path": "LICENSE",
+      "size": 1076,
+      "sha256": "c3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b858"
+    },
+    {
+      "path": "README.md",
+      "size": 4096,
+      "sha256": "d3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b859"
+    },
+    {
+      "path": "PROOF/SEED.txt",
+      "size": 152,
+      "sha256": "f3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b860"
+    }
+  ],
+  "tree_root_sha256": "placeholder_to_be_computed"
+}
