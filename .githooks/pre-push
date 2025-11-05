@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Pre-push hook: Verify TREE.ROOT exists before allowing push/tag
+
+set -e
+
+TREE_ROOT_FILE="PROOF/TREE.ROOT"
+
+if [ ! -f "$TREE_ROOT_FILE" ]; then
+  echo "[pre-push] ERROR: $TREE_ROOT_FILE not found!"
+  echo "Tree root hash must exist before pushing or tagging."
+  exit 1
+fi
+
+# Verify TREE.ROOT contains valid SHA256 hash (64 hex characters)
+TREE_ROOT=$(cat "$TREE_ROOT_FILE" | tr -d '\n\r\t ')
+
+if ! echo "$TREE_ROOT" | grep -qE '^[a-f0-9]{64}$'; then
+  echo "[pre-push] ERROR: Invalid tree root hash in $TREE_ROOT_FILE"
+  echo "Must be valid SHA256 hash (64 hex characters)"
+  exit 1
+fi
+
+echo "[pre-push] Tree root hash verified: $TREE_ROOT"
+exit 0
