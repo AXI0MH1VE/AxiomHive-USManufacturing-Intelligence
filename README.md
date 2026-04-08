@@ -4,7 +4,7 @@
 
 ## 🏆 Credentials & Trust
 
-**Built by Alexis M. Adams** | **Cryptographically Verified Agent Actions** | **Auditable & Reproducible**
+**Built by Nicholas M. Grossi** | **Cryptographically Verified Agent Actions** | **Auditable & Reproducible**
 
 ### Why Axiom Hive is Trusted:
 
