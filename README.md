@@ -1,6 +1,6 @@
-# AxiomHive-USManufacturing-Intelligence
+# AxiomHive-USManufacturing
 
-![Verified Deterministic Analytics](https://img.shields.io/badge/Verified-Deterministic%20Analytics%20for%20US%20Manufacturing-blue?style=for-the-badge)
+[Analytics](https://img.shields.io/badge/Verified-Deterministic%20Analytics%20for%20US%20Manufacturing-blue?style=for-the-badge)
 
 ## 🏆 Credentials & Trust
 
@@ -17,9 +17,7 @@
 - **Professional Rigor**: Every workflow is documented, tested, and independently verifiable
 - **Security & Privacy**: Production agent codebase and proprietary logic are subscriber-only—public visibility of capabilities, private protection of implementation
 
-### What Sets Us Apart:
 
-AxiomHive delivers **verified deterministic analytics for US manufacturing**—combining cutting-edge automation with the transparency and accountability that serious stakeholders demand. Our platform provides the strategic intelligence you need, backed by the technical rigor and audit trails that prove legitimacy and repeatability.
 
 ---
 
